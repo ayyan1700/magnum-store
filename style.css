@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --primery: rgb(231, 111, 42);
+    --secondery: rgb(0, 0, 0);
+    --main: rgb(61, 27, 3);
+    --attract: rgb(245, 238, 238);
+}
+
+body {
+    background: url(img/backimg-Picsart-AiImageEnhancer.png);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+.container {
+
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 1000px;
+    height: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 10px var(--secondery);
+}
+
+.top {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: var(--primery);
+    z-index: 3;
+    transform: translatey(-100%);
+    box-shadow: 0px 1px 10px var(--secondery);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.4s;
+}
+
+
+.menubar {
+    display: none;
+    width: 100%;
+    height: 70px;
+    background-color: var(--primery);
+    z-index: 3;
+    box-shadow: 0px 1px 10px var(--secondery);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.4s;
+}
+
+.menubar>h1 {
+    margin: 20px 20px;
+}
+
+
+.icecream {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    bottom: 25px;
+}
+
+.other {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.text {
+    width: 550px;
+    height: 95%;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.nav {
+    width: 550px;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid var(--primery);
+    box-shadow: 0px 1px 10px var(--secondery);
+    padding: 10px;
+    height: 12px;
+    border-radius: 5px;
+    color: var(--main);
+
+}
+
+a:hover {
+    color: var(--attract);
+}
+
+.leftimg {
+    position: absolute;
+    transform: translate(-35%, 20%);
+}
+
+.rightimg {
+    position: absolute;
+    transform: translate(45%, 11.5%);
+}
+
+span {
+    color: var(--main);
+}
+
+h1 {
+    color: var(--attract);
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--main);
+}
+
+.highlight {
+    color: var(--attract);
+}
+
+#menu-open {
+    display: none;
+    position: absolute;
+    right: 26px;
+    top: 20px;
+    font-size: 25px;
+
+}
+
+
+#menu-close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 30px;
+}
+
+
+.sidebar-menu {
+    padding: 50px;
+    width: 150px;
+    display: flex;
+    box-shadow: 0px 1px 10px var(--attract);
+    position: absolute;
+    right: 0px;
+    background-color: rgba(255, 0, 0, 0.138);
+    transform: translateX(100%);
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    z-index: 3;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    transition: transform ease-in-out 2s;
+}
+
+
+.search {
+    box-shadow: 0px 1px 10px var(--secondery);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid var(--secondery);
+    border-radius: 8px;
+    color: black;
+}
+
+.content {
+    margin-top: 50px;
+    width: auto;
+    height: 600px;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#right {
+    font-size: 25px;
+    background-color: rgba(255, 0, 0, 0.121);
+    padding: 8px;
+    margin: 0;
+    position: absolute;
+    right: 35%;
+    color: var(--attract);
+    border-radius: 50%;
+
+}
+#left{
+    font-size: 25px;
+    background-color: rgba(255, 0, 0, 0.121);
+    padding: 8px;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    color: var(--attract);
+    border-radius: 50%;
+}
+
+.bestitem {
+    width: auto;
+    height: 600px;
+}
+
+.best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.best>p {
+    color: var(--main);
+}
+
+.click {
+    border: 1px solid var(--primery);
+    padding: 7px;
+    width: 80px;
+    color: var(--main);
+
+}
+
+.click:hover {
+    color: var(--attract);
+    background-color: var(--main);
+
+}
+
+.footer{
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+ 
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--primery);
+    box-shadow: 0px 1px 10px var(--secondery);
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.first{
+    text-align: center;
+}
+.center>i{
+    font-size: 25px;
+    color: var(--secondery);
+}
+.center>i:hover{
+    color: var(--attract);
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+    main {
+        width: 90%;
+    }
+   .footer{
+    flex-direction: column;
+   }
+   .center{
+    flex-direction: row;
+   }
+    .top {
+        display: none;
+
+    }
+    .best>img{
+        width: 400px;
+        height: 400px;
+    }
+    
+
+   #left{
+      left: 30px;
+   }
+   #right{
+    right:30px;
+ }
+
+    .menubar {
+        display: block;
+        transform: translatey(-100%);
+
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .other {
+        margin-top: 60px;
+        width: 90%;
+    }
+
+    #menu-open {
+        display: block;
+    }
+
+    .best {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .best>p {
+        font-size: 13px;
+    }
+
+
+    text {
+        width: 350px;
+    }
+
+    .nav {
+        width: 50px;
+
+
+    }
+
+    .icecream {
+        width: 300px;
+        height: 500px;
+        bottom: 0px;
+    }
+
+    .leftimg {
+        display: none;
+
+    }
+
+    .rightimg {
+        display: none;
+    }
+
+    .link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .other {
+        width: auto;
+        margin-top: 90px;
+    }
+
+    #menu-open {
+        display: block;
+    }
+
+    .icecream {
+        width: 200px;
+        height: 450px;
+        bottom: -35px;
+    }
+
+}
